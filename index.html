@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Happy Independence Day</title>
+    <style>
+        *{
+            overflow: hidden;
+        }
+        body{
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+            margin: auto;
+
+        }
+        h1{
+            color: white;
+            font-size: 6rem;
+            text-align: center;
+            margin: 20px;
+        }
+        #first{
+            color: orange;
+        }
+        #last{
+            color: green;
+        }
+        button{
+            padding: 15px 30px;
+            background: linear-gradient(to bottom, #ff8011, white, #46ad1b);
+            border-radius: 12px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: blue;
+            cursor: pointer;
+            margin-top: 20px;
+            border: none;
+        }
+
+        @media (max-width: 803px) {
+            h1{
+                font-size: 4rem;
+            }
+            button{
+                font-size: 1.5rem;
+                padding: 10px 20px;
+            }
+            body{
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1{
+                font-size: 3rem;
+            }
+            button{
+                font-size: 1.2rem;
+                padding: 8px 16px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1><span id="first">HAPPY </span>INDEPENDENCE <span id="last">DAY 2024</span></h1>
+    <button id="redirect-button">Lehra Do</button>
+</body>
+<script>
+    document.getElementById('redirect-button').addEventListener('click',function(){
+        window.location.href = './flag.html';
+    });
+</script>
+</html>
